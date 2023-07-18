@@ -1,0 +1,284 @@
+.slider {
+    width: 100%;
+    padding: 0 0;
+    overflow: hidden;
+
+
+    margin-bottom: 92px;
+
+
+    @include mediaMobile {
+        margin-bottom: 35px;
+    }
+  }
+  
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+
+    margin-bottom: 34px;
+
+    @include mediaMobile {
+        margin-bottom: 22px;
+    }
+  }
+  
+.slide {
+    flex: 0 0 100%;
+
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+
+    background: $slaider-bg;
+    border-radius: 0px 5px 5px 0px;
+
+    @include mediaTabmob {
+        flex-direction: column;
+        border-radius: 5px 5px 0px 0px;
+    }
+  }
+  
+.slide__img {
+    
+
+    @include mediaTabmob {
+      display: flex;
+      align-items: center;
+
+      margin-bottom: 22px;
+    }
+
+   
+    
+}
+.slide-image {
+    
+    height: 100%;
+    clip-path: polygon(100% 0%, 0% 0%, 20% 100%, 100% 100%);
+    
+    border-radius: 0px 5px 5px 0px;
+
+    @include mediaTabmob {
+        clip-path: none;
+        border-radius: 5px 5px 0px 0px;
+    }
+  }
+
+.slide-text {
+    padding-left: 63px;
+
+    @include mediaTablet {
+        padding-left: 30px;
+    }
+    
+    @include mediaMobile {
+        padding-left: 23px;
+    }
+}
+
+.slide-title {
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 34px;
+    text-transform: uppercase;
+    margin-bottom: 2px;
+
+    @include mediaTablet {
+        font-size: 30px;
+        line-height: 28px;
+    }
+
+    @include mediaMobile {
+        font-size: 26px;
+        line-height: normal;
+    }
+}
+.slide-subtitle {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 18px;
+    margin-bottom: 16px;
+
+    @include mediaTablet {
+        font-size: 18px;
+        line-height: 14px;
+    }
+
+    @include mediaMobile {
+        font-size: 14px;
+        line-height: normal;
+
+        margin-bottom: 12px;
+    }
+}
+  
+.slide-links {
+    color: $menu-bg;
+    padding: 0;
+    gap: 8px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 33px;
+
+    @include mediaTablet {
+
+        font-size: 14px;
+
+        margin-bottom: 11px;
+    }
+
+    @include mediaMobile {
+        margin-bottom: 17px;
+    }
+  }
+  
+.slide-links li {
+    list-style: inside;
+    gap: 22.5px;
+  }
+  
+.color-li {
+    color: $color-text;
+}
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 36px;
+  }
+  
+
+
+.slide-price {
+    display: flex;
+    align-items: center;
+    
+    font-size: 20px;
+
+    margin-bottom: 26px;
+
+    span {
+        margin-left: 16px;
+
+        color: $color-nobrigh;
+        font-size: 16px;
+        line-height: 24px;
+        text-decoration-line: line-through;
+    }
+
+    @include mediaTablet {
+        font-size: 18px;
+
+        margin-bottom: 8px;
+
+        span {
+            font-size: 14px;
+        }
+    }
+
+    @include mediaMobile {
+        margin-bottom: 27px;
+    }
+}
+
+.slide_btn {
+    display: flex;
+    gap: 14px;
+
+    @include mediaMobile {
+        padding-bottom: 42px;
+        gap: 6px;
+    }
+}
+
+.slide_check {
+    width: 196px;
+    height: 43px;
+
+    border-radius: 50px;
+    border:none;
+    background: $button-bg;
+
+    text-align: center;
+    color: $body-bg;
+
+    font-size: 14px;
+    line-height: 21px;
+
+    transition: background 0.2s ease-in;
+
+    &:hover {
+        background: $button-bg-hover;
+    }
+
+    @include mediaTablet {
+        width: 155px;
+    }
+
+    @include mediaMobile {
+        width: 137px;
+    }
+}
+
+.slide_about {
+    width: 196px;
+    height: 43px;
+
+    border-radius: 50px;
+    border: 1px solid $button-bg;
+    background: $slaider-bg;
+
+    text-align: center;
+    color: $button-bg;
+
+    font-size: 14px;
+    line-height: 21px;
+
+    transition: background 0.2s ease-in;
+
+    &:hover {
+        background: $button-bg;
+        color: $body-bg;
+    }
+
+    @include mediaTablet {
+        width: 155px;
+    }
+
+    @include mediaMobile {
+        width: 137px;
+    }
+
+}
+
+.arrow {
+    cursor: pointer;
+    width: 34px;
+    height: 34px;
+    fill: $arrow-bg;
+    transition: fill 0.3s;
+
+    &:hover {
+        fill: $button-bg;
+    }
+}
+
+.pagination {
+    font-size: 18px;
+    color: $color-text;
+  }
+  
+  .pagination .current-digit {
+    font-weight: bold;
+  }
+  
+  .pagination .slash {
+    color: $arrow-bg;
+  }
+  
+  .pagination .total-slides {
+    color: $arrow-bg;
+  }
+  

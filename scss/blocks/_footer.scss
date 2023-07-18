@@ -1,0 +1,119 @@
+.footer {
+    background:  #08664F;
+}
+.foot {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 40px 15px;
+}
+
+.footer-main {
+    display: flex;
+    flex-direction: column;
+    
+}
+.footer-logo{
+    padding-bottom: 30px;
+}
+
+.footer-nav {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+.footer-nav > li > a {
+    display: flex;
+    color: #FFFFFF;
+    padding-bottom: 15px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+
+}
+
+.footer-social {
+    display: flex;
+}
+
+.soc-inst{
+padding-right: 20px;
+}
+.soc-inst > img {
+    width: 24px;
+    height: 23px;
+}
+.soc-tlg > img{
+ width: 24px;
+ height: 23px;
+}
+   
+.soc-wa {
+    padding-right: 20px;
+}
+.soc-wa > img {
+    width: 23px;
+    height: 23px;
+}
+
+.footer_logo-img {
+    width: 91.043px;
+    height: 26.901px;
+}
+
+@media (min-width: 1000px) {
+
+    .footer-main {
+        height: 100%;
+        flex: 1 140%;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .foot {
+        max-width: 1140px;
+        overflow: hidden;
+        padding-top: 59px;
+    }
+    .footer-logo {
+        display: flex;
+        align-items: center;
+        padding-bottom: 0px;
+    }
+    .footer-social{
+        flex: 1 50%;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    .footer-nav {
+        flex-direction: row;
+        align-items: center;
+    }
+    .footer-nav > li > a {
+        padding-right: 10px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        padding-right: 30px;
+        padding-bottom: 0px;
+    }
+    .soc-inst{
+        padding-right: 15px;
+        }
+    .soc-inst > img {
+            width: 35px;
+            height: 35px;
+        }
+    .soc-tlg > img{
+         width: 35px;
+         height: 35px;
+        }
+           
+     .soc-wa {
+            padding-right: 15px;
+        }
+     .soc-wa > img {
+            width: 35px;
+            height: 35px;
+        }
+}

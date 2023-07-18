@@ -1,0 +1,142 @@
+.header__menu {
+    background: $menu-bg;
+
+
+    
+    @include mediaMobile {
+        display: none;
+    }
+}
+
+.navbar {
+    padding-top: 10px;
+    padding-bottom: 9px;
+
+    @include mediaMobile {
+        background: $body-bg;
+    }
+}
+
+.menu {
+    display: flex;
+    gap: 30px;
+
+
+    @include mediaTablet {
+        justify-content: center;
+    }
+
+    @include mediaTabmob {
+        gap: 8px;
+    }
+
+  
+}
+
+.menu__button {
+    display: none;
+
+
+    @include mediaMobile {
+        display: block;
+        margin-top: 39px;
+
+        width: 196px;
+        height: 43px;
+
+        background: $header-mobile;
+        color: $menu-bg;
+        border-radius: 50px;
+        transition: background 0.3s;
+
+    }
+
+    &:hover {
+        color: #FFFFFF;
+        background: #0DBC91;
+    }
+}
+
+.navbar__wrap {
+    display: flex;
+    justify-content: space-between;
+    height: 65px;
+    overflow: hidden;
+}
+
+.burg {
+        display: none;
+    @include mediaMobile {
+        display: flex;
+        align-items: center;
+
+    }
+}
+.burg__field {
+    padding: 10px 20px;
+    cursor: pointer;
+
+    @include mediaMobile {
+        padding: 0px 43px 0px 0px;
+    }
+}
+
+.bar {
+    display: block;
+    width: 30px;
+    height: 3px;
+    margin: 6px auto;
+    background-color: #1FA181;
+    transition: 0.2s;
+}
+.popup_burg {
+    position: fixed;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(69, 146, 127, 0.9);
+    z-index: 100;
+    display: flex;
+}
+
+.popup_burg.open {
+    left: 0;
+    top: 64px;
+}
+.popup_burg .menu {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: start;
+    padding: 50px 20px;
+}
+    
+
+.popup_burg .menu > li {
+                width: 100%;
+            }
+.popup_burg .menu > li > a {
+                width: 100%;
+                display: flex;
+                justify-content: flex-start;
+                padding: 10px 0;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
+                color: #FFFFFF;
+            }
+.popup_burg .menu > li > a:hover {
+                background-color: rgba(122, 82, 179, 0.1);
+            }
+
+.burg__field.active .bar:nth-child(2) {
+    opacity: 0;
+}
+.burg__field.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+.burg__field.active .bar:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
+}

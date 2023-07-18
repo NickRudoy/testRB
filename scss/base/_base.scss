@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&display=swap');
+
+body {
+    font-family: $font-main;
+    font-size: 16px;
+    background-color: $body-bg;
+    color: $color-text;
+}
+
+a {
+    color: $body-bg;
+    transition: color 0.2s ease-in;
+
+    &:hover {
+        color:antiquewhite;
+    }
+}
+body.noscroll {
+    overflow: hidden;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 17px;
+    max-width: 1140px;
+    
+}
+
+.none {
+    display: none;
+}
+
+.title-1 {
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+    @include mediaTablet {
+        font-size: 30px;
+    }
+
+    @include mediaTabmob {
+        font-size: 28px;
+    }
+
+    @include mediaMobile {
+        font-size: 26px;
+    }
+}
